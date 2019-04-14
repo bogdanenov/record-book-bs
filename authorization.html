@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Front-end Page</title>
+	
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div id="error" class="error">
+		<p>Вы ввели неверные данные</p>
+	</div>
+	<div class="box">
+		<h2>
+			Авторизация
+		</h2>
+		<form>
+			<div class="inputBox">
+				<input type="email" placeholder="почтова адреса" name="" required>
+			</div>
+			<div class="inputBox">
+				<input id="passlogin" type="password" placeholder="пароль" name="" required>
+				<i id="pass" class="fas fa-eye"></i>
+                <i id="pass-slash" class="fas fa-eye-slash del-slash"></i>
+			</div>
+			<input type="submit" value="войти" class="btn-login">
+			<a href="#">забыли пароль?</a>
+		</form>
+	</div>
+
+	<script type="text/javascript" src="js/auth.js"></script>	
+</body>
+</html>
