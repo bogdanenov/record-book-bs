@@ -286,6 +286,11 @@ option[disabled] {
 textarea {
     resize: none;
 }
+
+textarea::placeholder {
+    padding-left: 15px;
+}
+
 #note.reg-info {
     border-radius: 3px;
     height: 147px;
@@ -320,9 +325,6 @@ input[type='file'] {
 }
 .input-container-worker {
     max-width: 320px;
-}
-input[type='file'] {
-    display: none;
 }
 .browse-btn-worker {
     background: #efefef;
@@ -423,7 +425,6 @@ input[type='file'] {
 	margin-bottom: 10px;	
 	border-radius: 3px;
 	border: 2px solid #08658c;
-	font-family: "Proxima Nova";
 	font-weight: bold;
 	padding-left: 60px;
 	padding-bottom: 5px;
@@ -436,7 +437,6 @@ input[type='file'] {
 
 .row.auth .box .inputBox input::placeholder {
 	font-weight: bold;
-	font-family: "Proxima Nova";
 	font-size: 16px;
 	opacity: .8;
 	transition: .5s ease all; 
@@ -497,7 +497,6 @@ input[type='file'] {
 	background-color: #08658c;
 	border-radius: 5px;
 	text-transform: uppercase;
-	font-family: "Proxima Nova";
 	font-size: 16px;
 	font-weight: bold;
 	border: 2px solid transparent;
@@ -520,7 +519,6 @@ input[type='file'] {
 	margin-top: 14px;
 	color: #000;
 	font-size: 12px;
-	font-family: "Proxima Nova";
 }
 
 .row.auth .error {
@@ -538,7 +536,6 @@ input[type='file'] {
 }
 
 .row.auth .error p{
-	font-family: 'Proxima Nova', sans-serif;
 	font-size: 14px;
 	margin-bottom: 0px;
 }
@@ -1131,6 +1128,256 @@ tbody:nth-child(even) {background-color: #e7e7e7;}
     cursor: pointer;
 }
 
+
+/* Send comm */
+
+.wrapper .send-comment {
+    margin-right: 102px;
+    margin-left: 102px;
+}
+
+.wrapper .send-comment .row-info .col-info p {
+    color: #000;
+    text-align: right;
+    font-size: 14px;
+}
+
+.wrapper .send-comment .row-info .col-info.btn-send {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.wrapper .notification-mess {
+    display: inline-block;
+    border: 2px solid #4381ac;
+    color: #000;
+    border-radius: 3px;
+    padding: 20px 10px;
+    margin-right: 148px;
+    margin-left: 148px;
+    background-color: #c9e0f1;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+/* Read comm */
+.wrapper .setting-comment {
+    border-bottom: 2px solid #4381ac;
+}
+
+.wrapper .setting-comment button {
+    width: 100%;
+    height: 38px;
+    background-color: transparent;
+    border-radius: 3px;
+    border: 2px solid #4381ac;
+    transition: .3s all ease;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.wrapper .setting-comment .btn-sort {
+    border:none;
+    background-color: #c9c9c9;
+    transition: .3s all ease;
+}
+
+.wrapper .setting-comment .btn-sort:hover {
+    background-color: #868686;
+    color: #efefef;
+}
+
+button:focus {
+    outline: none;
+}
+
+.wrapper .setting-comment .sort .sort-arrow {
+    display: block;
+    position: absolute;
+    top: 25%;
+    right: 0;
+    padding-right: 30px;
+    font-size: 20px;
+}
+
+.wrapper .setting-comment .sort .sort-arrow.disable-arrow {
+    display: none;
+}
+
+.wrapper .setting-comment button:hover {
+    color: #efefef;
+    background-color: #4381ac;
+    cursor: pointer;
+}
+
+.wrapper .setting-comment span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 48px;
+    color: #000
+}
+
+.wrapper .comments ul {
+    padding: 0;
+}
+.wrapper .comments ul li {
+    list-style: none;
+    margin-top: 32px;
+    padding-bottom: 44px;
+    border-bottom: 1px solid #bbbbbb;
+}
+
+.wrapper .comments .user-logo-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper .comments .user-logo-name i{
+    display: flex;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-size: 40px;
+}
+
+.wrapper .comments .user-logo-name span{
+    color: #4381ac;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.wrapper .comments .user-comment .data-block{
+    display: flex;
+}
+
+
+.wrapper .comments .user-comment span{
+    font-size: 13px;
+    margin-left: 20px;
+    color: #000;
+}
+
+.wrapper .comments .user-comment .content-comment{
+    display: flex;
+    color: #000;
+    margin-top: 15px;
+}
+
+.progress{
+    height: 10px;
+    background: #333;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 30px;
+    overflow: visible;
+}
+.progress .progress-bar{
+    position: relative;
+    -webkit-animation: animate-positive 2s;
+    animation: animate-positive 2s;
+}
+
+.progress.blue.teacher-table {
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+
+/* Table rattings */
+
+.table span {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.table.info-comm tbody td:last-child{
+    width: 20%;
+}
+
+.table.info-comm i {
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.table .btn-set-exam{
+    border: 2px solid #4381ac;
+    width: 80%;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    font-size: 16px;
+    border-radius: 3px;
+    color: #4381ac;
+    background: transparent;
+    transition: .5s all ease;
+}
+
+.table .btn-set-exam:hover {
+    color: #efefef;
+    background-color: #4381ac;
+    cursor: pointer;
+}
+
+.btn-option.table-comm {
+    margin-top: 50px;
+}
+
+.btn-option.table-comm .our-teacher{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-option.table-comm .our-teacher button:first-child{
+    margin-right: 20px;
+}
+
+.progress .progress-bar:after{
+    content: "";
+    display: inline-block;
+    width: 9px;
+    height: 20px;
+    background: #efefef;
+    position: absolute;
+    top: -5px;
+    bottom: -10px;
+    right: -1px;
+    z-index: 1;
+    transform: rotate(35deg);
+}
+.progress .progress-value{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    position: absolute;
+    top: -27px;
+    right: -13px;
+}
+@-webkit-keyframes animate-positive{
+    0%{ width: 0; }
+}
+@keyframes animate-positive {
+    0%{ width: 0; }
+}   
+
+@-webkit-keyframes animate-positive{
+    0%{ width: 0; }
+}
+@keyframes animate-positive{
+    0%{ width: 0; }
+}
+
 .hamburger {
     display: inline-block;
     cursor: pointer;
@@ -1232,6 +1479,7 @@ transform: rotateY(180deg); }
         font-size: 14px;
         padding: 5px 0px;
     }
+
     .wrapper .toggle-eval {
         font-size: 12px;
         margin-bottom: 10px;
@@ -1248,6 +1496,48 @@ transform: rotateY(180deg); }
         background: transparent;
         transition: .5s all ease;
     }
+
+    .table .btn-set-exam{
+        border: 2px solid #4381ac;
+        width: 80%;
+        margin-bottom: 15px;
+        margin-top: 20px;
+        font-size: 12px;
+        border-radius: 3px;
+        color: #4381ac;
+        background: transparent;
+        transition: .5s all ease;
+    }
+
+    .wrapper .send-comment .row-info.btn-option {
+        flex-direction: column-reverse;
+    }
+    #go-to-back , #send-mess{
+        width: 100%;
+    }
+    .wrapper .send-comment {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .wrapper .notification-mess {
+        margin-right: 46px;
+        margin-left: 46px;
+    }
+    .wrapper .comments .user-comment .progress{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .wrapper .comments .user-comment span{
+        display: block;
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+    .btn-option.table-comm {
+        margin-top: -20px;
+    }
+    .btn-option.table-comm button {
+        width: 100%;
+    }
 }
 
 @media (max-width: 810px) {
@@ -1259,10 +1549,13 @@ transform: rotateY(180deg); }
     .wrapper .table td {
         font-size: 12px;
     }
+    .btn-option.table-comm {
+        margin-top: 20px;
+    }
     
 }
 
-@media (max-width: 777px) {
+@media (max-width: 768px) {
     #logo {
         display: none;
     }
@@ -1305,6 +1598,15 @@ transform: rotateY(180deg); }
 }
 
 @media (max-width: 576px) {
+    .wrapper .send-comment .row-info .col-info p {
+        font-size: 12px;
+    }
+    .wrapper .send-comment .row-info .col-info span {
+        font-size: 12px;
+    }
+    #go-to-back , #send-mess{
+        font-size: 14px;
+    }
     .left-menu {
         width: 247px;
     }
@@ -1317,5 +1619,9 @@ transform: rotateY(180deg); }
     .wrapper .btn-option {
         display: flex;
         flex-direction: column-reverse;
+    }
+    
+    .btn-option.table-comm {
+        margin-top: -60px;
     }
 }

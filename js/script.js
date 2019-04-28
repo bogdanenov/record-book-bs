@@ -1,4 +1,11 @@
 window.onload = function () {
+    const realInput = document.getElementById('real-input');
+    const uploadButton = document.querySelector('.browse-btn');
+    const fileInfo = document.querySelector('.file-info');
+    const realInputWorker = document.getElementById('real-input-worker');
+    const uploadButtonWorker = document.querySelector('.browse-btn-worker');
+    const fileInfoWorker = document.querySelector('.file-info-worker');
+    
     var btnBox = document.getElementsByClassName("btn-box");
     var btnforms = document.getElementsByClassName("btn-form");
     var regFormStudent = document.getElementById("form-student");
@@ -9,12 +16,6 @@ window.onload = function () {
     var passW = document.getElementById("passW");
     var passSlashW = document.getElementById("passW-slash");
     var passwordInputW = document.getElementById("pass-work");
-    const realInput = document.getElementById('real-input');
-    const uploadButton = document.querySelector('.browse-btn');
-    const fileInfo = document.querySelector('.file-info');
-    const realInputWorker = document.getElementById('real-input-worker');
-    const uploadButtonWorker = document.querySelector('.browse-btn-worker');
-    const fileInfoWorker = document.querySelector('.file-info-worker');
     var items = document.getElementsByClassName("item");
     var hamburger = document.getElementById("hamb");
     var content = document.getElementById("main-content");

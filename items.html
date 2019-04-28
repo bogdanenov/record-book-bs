@@ -3,8 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Залишити відгук</title>
+	<title>Ваші предмети</title>
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@8.8.3/dist/sweetalert2.min.css">
@@ -65,59 +66,40 @@
         </div>
         <div id="main-content" class="col-xl-10 col-lg-9 col-md-8 col-sm-12 main-content">
             <div id="wrapper" class="row wrapper no-gutters">
-                <div class="row notification-mess no-gutters">
-                    <div class="col-12">
-                        Спроби підвищення рейтингу, не чесним шляхом, будуть відслідковуватися і передаватися вищому керівництву.
+                <div class="row table-block no-gutters">
+                    <div class="col">
+                        <table id="table-exam" class="table">
+                            <thead>
+                                <th>Назва предмета</th>
+                                <th>ПІБ викладача</th>
+                                <th>Асистент</th>
+                            </thead>
+                            <tbody class="table-list">
+                                <td>ІАД</td>
+                                <td>Селіванова А.В</td>
+                                <td>Корабльов В.А</td>
+                            </tbody>
+                            <tbody class="table-list">
+                                <td>ІВН</td>
+                                <td>Иванов А.В</td>
+                                <td>Иванова В.А</td>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-                <div class="row send-comment no-gutters">
-                    <div class="col">
-                        <form>
-                            <div class="row row-info">
-                                <div class="col-xl-9 col-lg-12 col-info">
-                                    <span>ПІБ викладача *</span>
-                                    <section class="input-box">
-                                        <select class="reg-info" required>
-                                            <option value="" selected disabled>Оберіть ПІБ виклачада:</option>
-                                            <option value="man">Чоловіча</option>
-                                            <option value="woman">Жіноча</option>
-                                        </select>
-                                    </section>
-                                </div>
-                                <div class="col-xl-3 col-lg-12 col-info">
-                                    <span>Оцінка *</span>
-                                    <section class="input-box">
-                                        <select class="reg-info" required>
-                                            <option value="" selected disabled>Оберіть оцінку:</option>
-                                            <option value="man">100</option>
-                                            <option value="woman">60</option>
-                                        </select>
-                                    </section>
-                                </div>
-                            </div>
-                            <div class="row row-info">
-                                <div class="col col-info">
-                                    <span>Відгук</span>
-                                    <div class="input-box note">
-                                        <textarea name="note" class="reg-info" id="note" cols="30" rows="5" placeholder="Ваша думка щодо викладача"></textarea>
-                                    </div>
-                                    <p>* - обов'язкові поля</p>
-                                </div>
-                            </div>
-                            <div class="row row-info btn-option">
-                                <div class="col-xl-6 col-lg-12 col-info">
-                                    <button id="go-to-back">Повернутися назад</button>
-                                </div>
-                                <div class="col-xl-6 col-lg-12 col-info btn-send">
-                                    <button id="send-mess" >Залишити відгук</button>
-                                </div>
-                            </div>
-                        </form>
+                <div class="row toggle-eval no-gutters">
+                    <div class="el col-xl-4 col-lg-12">
+                        <button class="btn-set-exam">Попередній семестр</button>
+                    </div>
+                    <div class="el col-xl-4 col-lg-12">
+                        <p>2016-2017</p><p>(1 семестр)</p>
+                    </div>
+                    <div class="el col-xl-4 col-lg-12">
+                        <button class="btn-set-exam" disabled>Наступний семестр</button></div>
                     </div>
                 </div>
             </div>
         </div>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/mainpage.js"></script>
 </body>
 </html>
