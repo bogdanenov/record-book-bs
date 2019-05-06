@@ -951,8 +951,9 @@ input[type='file'] {
     display: block;
 }
 
+
 .left-menu.is-visible {
-    display: none;
+    display: block;
 }
 
 .row.menu-block .menu {
@@ -1410,16 +1411,6 @@ button:focus {
     border-radius: 50%;
 }
 
-.services-text .leftimg {
-    float: left;
-    margin: 5px 66px 0px 0px;
-}
-
-.services-text .rightimg {
-    float: right;
-    margin: 0px 0px 0px 66px;
-}
-
 .card-sources {
     display: flex;
     flex-direction: column;
@@ -1672,6 +1663,9 @@ transform: rotateY(180deg); }
     .logo img {
         display: none;
     }
+    .left-menu {
+        display: none;
+    }
     .row .hamburger {
         display: block;
     }
@@ -1683,7 +1677,6 @@ transform: rotateY(180deg); }
     .main-content {
         position: absolute;
         z-index: 1;
-        filter: blur(10px);
     }
 }
 
