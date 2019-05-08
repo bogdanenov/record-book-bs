@@ -1473,6 +1473,96 @@ button:focus {
     margin: 0;
 }
 
+/* List student */
+.row-info.option-filter {
+    margin: 0;
+}
+
+.row-info.option-filter .col-info input{
+    padding-left: 10px;
+    padding-right: 42px;
+}
+
+.wrapper .row-info.option-filter .col-info .input-box i{
+    position: absolute;
+    top: 41%;
+    right: 0;
+    padding-right: 13px;
+    font-size: 20px;
+    font-weight: bold;
+	color: #4381ac;
+}
+
+.card-lists .card-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #4381ac;
+    background-color: #e7e6e6;
+    color: #000;
+    margin-top: 15px;
+    border-radius: 3px;
+}
+
+.card-lists.disabled {
+    display: none;
+}
+
+.card-lists .card-list .info-user-card{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card-lists .card-list .info-user-card:nth-child(1){
+    margin-top: 15px;
+}
+
+
+.card-lists .card-list .info-user-card:nth-child(4){
+    margin-top: -10px;
+}
+
+.card-lists .card-list .info-user-card:nth-child(5){
+    margin-top: -10px;
+}
+
+.card-lists .card-list .info-user-card:nth-child(6){
+    margin-top: -10px;
+}
+
+.card-lists .card-list .info-user-card img{
+    display: flex;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+}
+
+.card-lists .card-list .info-user-card span{
+    color: #4381ac;
+}
+
+.card-lists .card-list button{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    background-color: transparent;
+    border-radius: 3px;
+    color: #4381ac;
+    font-size: 16px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 2px solid #4381ac;
+    transition: .3s all ease;
+}
+
+.card-lists .card-list button:hover {
+    color: #efefef;
+    background-color: #4381ac;
+    cursor: pointer;
+}
+
+
 .hamburger {
     display: inline-block;
     cursor: pointer;
@@ -1650,12 +1740,16 @@ transform: rotateY(180deg); }
     
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     #logo {
         display: none;
     }
     span {
         font-size: 13px;
+    }
+    
+    .card-lists .card-list .info-user-card span{
+        font-size: 16px;
     }
     .logo-text {
         display: none;
@@ -1678,9 +1772,6 @@ transform: rotateY(180deg); }
         position: absolute;
         z-index: 1;
     }
-}
-
-@media (max-width: 768px) {
     .wrapper .table th {
         font-size: 14px;
         padding: 10px 4px;
@@ -1690,7 +1781,7 @@ transform: rotateY(180deg); }
         font-size: 14px;
     }
     .row.menu-block .menu .menu__item a{
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 

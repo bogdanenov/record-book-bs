@@ -16,7 +16,8 @@ window.onload = function () {
             hamburger.classList.toggle("is-active");
             content.style.filter = "blur(10px)";
             navbar.classList.toggle("is-visible");
-            navbar.style.height = content.clientHeight + "px";
+            if (content.clientHeight > window.innerHeight)
+                navbar.style.height = content.clientHeight + "px";
             stateHamburger = !stateHamburger;
         }
     });
@@ -50,7 +51,8 @@ window.onload = function () {
             navbar.style.height = "auto";
             content.style = null;
         } else {
-            navbar.style.height = content.clientHeight + "px";
+            if (content.clientHeight > window.innerHeight)
+                navbar.style.height = content.clientHeight + "px";
         }
     }
 
