@@ -24,16 +24,17 @@ window.onload = function () {
 
     hamburger.addEventListener('click', function() {
         if(!stateHamburger) {
-            hamburger.classList.toggle("is-active");
+            hamburger.classList.remove("is-active");
             navbar.classList.remove("is-visible");
-            content.style.filter = "blur(10px)";
-            document.body.style.overflow = "hidden";
+            navbar.style.height = "auto";
+            content.style.filter = "none";
             stateHamburger = !stateHamburger;
         } else {
-            hamburger.classList.remove("is-active");
-            content.style.filter = "none";
-            document.body.style.overflow = "auto";
+            hamburger.classList.toggle("is-active");
+            content.style.filter = "blur(10px)";
             navbar.classList.toggle("is-visible");
+            if (content.clientHeight > window.innerHeight)
+                navbar.style.height = content.clientHeight + "px";
             stateHamburger = !stateHamburger;
         }
     });
@@ -64,9 +65,11 @@ window.onload = function () {
         }
         if(width > 768) {
             document.body.style.overflow = "auto";
+            navbar.style.height = "auto";
             content.style = null;
         } else {
-            document.body.style.overflow = "hidden";
+            if (content.clientHeight > window.innerHeight)
+                navbar.style.height = content.clientHeight + "px";
         }
     }
 

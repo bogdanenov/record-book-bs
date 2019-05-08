@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Особисті справи</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@8.8.3/dist/sweetalert2.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <div class="row header">
+        <div id="hamb" class="hamburger hamburger--3dx col-xl-10 col-lg-8 col-md-6 col-sm-4 col-3">
+            <div class="hamburger-box">
+                <div class="hamburger-inner">
+                    
+                </div>
+            </div>
+        </div>
+        <div id="logo" class="logo col-xl-10 col-lg-8 col-md-6 col-sm-4">
+            <img src="img/logo.png" alt="logo">
+            <span class="logo-text">Електронна Залікова Книжка</span>
+        </div>
+        <div class="notification-exit col-xl-2 col-lg-4 col-md-6 col-sm-8 col-9">
+            <a class="bell" href="#"><i class="fas fa-bell"></i></a>
+            <a class="exit" href="#"><i class="fas fa-sign-out-alt"></i></a>
+        </div>
+    </div>
+    <div class="row content no-gutters">
+        <div id="left-menu" class="col-xl-2 col-lg-3 col-md-4 col-sm-5 col-12 left-menu">
+            <div class="row profile no-gutters">
+                <div class="row info no-gutters">
+                    <div class="photo">
+                        <img src="img/photo.png" alt="user-photo">
+                    </div>
+                </div>
+                <div class="row desc-info no-gutters">
+                    <div class="desc">
+                        <p>Єнов Богдан Олександрович</p>
+                        <p>Група: 343(б)</p>
+                    </div>
+                </div>
+                <div class="row option no-gutters">
+                    <a class="cog" href="#"><i class="fas fa-cog"></i></a>
+                    <a class="pen" href="#"><i class="fas fa-pen"></i></a>
+                    <a class="dot" href="#"><i class="fas fa-ellipsis-h"></i></a>
+                </div>
+            </div>
+            <div class="row menu-block no-gutters">
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a class="item" href="#"><i class="fas fa-address-book"></i><span>Залікова книжка</span></a>
+                        <a class="item" href="#"><i class="fas fa-th-list"></i><span>Ваші предмети</span></a>
+                        <a class="item" href="#"><i class="fas fa-clock"></i><span>Розклад</span></a>
+                        <a class="item" href="#"><i class="fas fa-info-circle"></i><span>Корисна інформація</span></a>
+                        <a class="item" href="#"><i class="fas fa-comments"></i><span>Відгуки про викладачів</span></a>
+                        <a class="item" href="#"><i class="far fa-calendar-alt"></i><span>Колендар подій</span></a>
+                        <a class="item" href="#"><i class="far fa-file-alt"></i><span>Відправити заяву</span></a>
+                        <a class="item" href="#"><i class="fas fa-users-cog"></i><span>Особисті справи</span></a>
+                        <a class="item" href="#"><i class="fas fa-sliders-h"></i><span>Менеджмент академії</span></a>
+                        <a class="item" href="#"><i class="fas fa-file-contract"></i><span>Відомість</span></a>
+                        <a class="item" href="#"><i class="fas fa-clipboard-check"></i><span>Журнал відвідувань</span></a>
+                        <a class="item" href="#"><i class="fas fa-calendar-week"></i><span>Події</span></a>
+                        <a class="item" href="#"><i class="fas fa-clipboard-list"></i><span>Навантаження</span></a>
+                        <a class="item" href="#"><i class="fas fa-user-plus"></i><span>Реєстрація користувача</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="main-content" class="col-xl-10 col-lg-9 col-md-8 col-sm-12 main-content">
+            <div id="wrapper" class="row wrapper no-gutters">
+                <div class="row btn-toggle option-toggle no-gutters">
+                    <div class="col">
+                        <input class="btn-box exam isSelect" type="button" value="Студенти">
+                    </div>
+                    <div class="col">
+                        <input class="btn-box eval" type="button" value="Працівники">
+                    </div>
+                </div>
+                <div class="row row-info option-filter no-gutters">
+                    <div class="col-12 col-info option-select">
+                        <div class="input-box">
+                            <i class="fas fa-search"></i>
+                            <input name="search" class="reg-info" type="text" placeholder="Пошук">
+                        </div>
+                    </div>
+                </div>
+                <div id="student-lists" class="row card-lists">
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="card-list">
+                            <div class="info-user-card">
+                                Доступ:<span style="color: #26a022"> Відкрит</span>
+                            </div>
+                            <div class="info-user-card">
+                                <img src="img/photo.png" alt="user">
+                            </div>
+                            <div class="info-user-card">
+                                ПІБ:<span> Єнов Богдан Олександрович</span>
+                            </div>
+                            <div class="info-user-card">
+                                Група:<span> 343(б)</span>
+                            </div>
+                            <div class="info-user-card">
+                                Стать:<span> Чоловіча</span>
+                            </div>
+                            <div class="info-user-card">
+                                Статус:<span> Вчиться</span>
+                            </div>
+                            <button>Детальніше</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="card-list">
+                            <div class="info-user-card">
+                                Доступ:<span style="color: #cd4040"> Заблокованно</span>
+                            </div>
+                            <div class="info-user-card">
+                                <img src="img/photo.png" alt="user">
+                            </div>
+                            <div class="info-user-card">
+                                ПІБ:<span> Єнов Богдан Олександрович</span>
+                            </div>
+                            <div class="info-user-card">
+                                Група:<span> 343(б)</span>
+                            </div>
+                            <div class="info-user-card">
+                                Стать:<span> Чоловіча</span>
+                            </div>
+                            <div class="info-user-card">
+                                Статус:<span> Вчиться</span>
+                            </div>
+                            <button>Детальніше</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="card-list">
+                            <div class="info-user-card">
+                                Доступ:<span style="color: #26a022"> Відкрит</span>
+                            </div>
+                            <div class="info-user-card">
+                                <img src="img/photo.png" alt="user">
+                            </div>
+                            <div class="info-user-card">
+                                ПІБ:<span> Єнов Богдан Олександрович</span>
+                            </div>
+                            <div class="info-user-card">
+                                Група:<span> 343(б)</span>
+                            </div>
+                            <div class="info-user-card">
+                                Стать:<span> Чоловіча</span>
+                            </div>
+                            <div class="info-user-card">
+                                Статус:<span> Вчиться</span>
+                            </div>
+                            <button>Детальніше</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="card-list">
+                            <div class="info-user-card">
+                                Доступ:<span style="color: #26a022"> Відкрит</span>
+                            </div>
+                            <div class="info-user-card">
+                                <img src="img/photo.png" alt="user">
+                            </div>
+                            <div class="info-user-card">
+                                ПІБ:<span> Єнов Богдан Олександрович</span>
+                            </div>
+                            <div class="info-user-card">
+                                Група:<span> 343(б)</span>
+                            </div>
+                            <div class="info-user-card">
+                                Стать:<span> Чоловіча</span>
+                            </div>
+                            <div class="info-user-card">
+                                Статус:<span> Вчиться</span>
+                            </div>
+                            <button>Детальніше</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="card-list">
+                            <div class="info-user-card">
+                                Доступ:<span style="color: #cd4040"> Заблокованно</span>
+                            </div>
+                            <div class="info-user-card">
+                                <img src="img/photo.png" alt="user">
+                            </div>
+                            <div class="info-user-card">
+                                ПІБ:<span> Єнов Богдан Олександрович</span>
+                            </div>
+                            <div class="info-user-card">
+                                Група:<span> 343(б)</span>
+                            </div>
+                            <div class="info-user-card">
+                                Стать:<span> Чоловіча</span>
+                            </div>
+                            <div class="info-user-card">
+                                Статус:<span> Вчиться</span>
+                            </div>
+                            <button>Детальніше</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="card-list">
+                            <div class="info-user-card">
+                                Доступ:<span style="color: #26a022"> Відкрит</span>
+                            </div>
+                            <div class="info-user-card">
+                                <img src="img/photo.png" alt="user">
+                            </div>
+                            <div class="info-user-card">
+                                ПІБ:<span> Єнов Богдан Олександрович</span>
+                            </div>
+                            <div class="info-user-card">
+                                Група:<span> 343(б)</span>
+                            </div>
+                            <div class="info-user-card">
+                                Стать:<span> Чоловіча</span>
+                            </div>
+                            <div class="info-user-card">
+                                Статус:<span> Вчиться</span>
+                            </div>
+                            <button>Детальніше</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="card-list">
+                            <div class="info-user-card">
+                                Доступ:<span style="color: #cd4040"> Заблокованно</span>
+                            </div>
+                            <div class="info-user-card">
+                                <img src="img/photo.png" alt="user">
+                            </div>
+                            <div class="info-user-card">
+                                ПІБ:<span> Єнов Богдан Олександрович</span>
+                            </div>
+                            <div class="info-user-card">
+                                Група:<span> 343(б)</span>
+                            </div>
+                            <div class="info-user-card">
+                                Стать:<span> Чоловіча</span>
+                            </div>
+                            <div class="info-user-card">
+                                Статус:<span> Вчиться</span>
+                            </div>
+                            <button>Детальніше</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="card-list">
+                            <div class="info-user-card">
+                                Доступ:<span style="color: #26a022"> Відкрит</span>
+                            </div>
+                            <div class="info-user-card">
+                                <img src="img/photo.png" alt="user">
+                            </div>
+                            <div class="info-user-card">
+                                ПІБ:<span> Єнов Богдан Олександрович</span>
+                            </div>
+                            <div class="info-user-card">
+                                Група:<span> 343(б)</span>
+                            </div>
+                            <div class="info-user-card">
+                                Стать:<span> Чоловіча</span>
+                            </div>
+                            <div class="info-user-card">
+                                Статус:<span> Вчиться</span>
+                            </div>
+                            <button>Детальніше</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="student-lists" class="row card-lists disabled">
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="card-list">
+                            <div class="info-user-card">
+                                Доступ:<span style="color: #cd4040"> Заблокованно</span>
+                            </div>
+                            <div class="info-user-card">
+                                <img src="img/user.png" alt="user">
+                            </div>
+                            <div class="info-user-card">
+                                ПІБ:<span> Єнов Богдан Олександрович</span>
+                            </div>
+                            <div class="info-user-card">
+                                Посада:<span> викладач</span>
+                            </div>
+                            <div class="info-user-card">
+                                Стать:<span> Чоловіча</span>
+                            </div>
+                            <div class="info-user-card">
+                                Статус:<span> Працює</span>
+                            </div>
+                            <button>Детальніше</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="card-list">
+                            <div class="info-user-card">
+                                Доступ:<span style="color: #cd4040"> Заблокованно</span>
+                            </div>
+                            <div class="info-user-card">
+                                <img src="img/user.png" alt="user">
+                            </div>
+                            <div class="info-user-card">
+                                ПІБ:<span> Єнов Богдан Олександрович</span>
+                            </div>
+                            <div class="info-user-card">
+                                Посада:<span> викладач</span>
+                            </div>
+                            <div class="info-user-card">
+                                Стать:<span> Чоловіча</span>
+                            </div>
+                            <div class="info-user-card">
+                                Статус:<span> Працює</span>
+                            </div>
+                            <button>Детальніше</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="card-list">
+                            <div class="info-user-card">
+                                Доступ:<span style="color: #cd4040"> Заблокованно</span>
+                            </div>
+                            <div class="info-user-card">
+                                <img src="img/user.png" alt="user">
+                            </div>
+                            <div class="info-user-card">
+                                ПІБ:<span> Єнов Богдан Олександрович</span>
+                            </div>
+                            <div class="info-user-card">
+                                Посада:<span> викладач</span>
+                            </div>
+                            <div class="info-user-card">
+                                Стать:<span> Чоловіча</span>
+                            </div>
+                            <div class="info-user-card">
+                                Статус:<span> Працює</span>
+                            </div>
+                            <button>Детальніше</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="card-list">
+                            <div class="info-user-card">
+                                Доступ:<span style="color: #cd4040"> Заблокованно</span>
+                            </div>
+                            <div class="info-user-card">
+                                <img src="img/user.png" alt="user">
+                            </div>
+                            <div class="info-user-card">
+                                ПІБ:<span> Єнов Богдан Олександрович</span>
+                            </div>
+                            <div class="info-user-card">
+                                Посада:<span> викладач</span>
+                            </div>
+                            <div class="info-user-card">
+                                Стать:<span> Чоловіча</span>
+                            </div>
+                            <div class="info-user-card">
+                                Статус:<span> Працює</span>
+                            </div>
+                            <button>Детальніше</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="card-list">
+                            <div class="info-user-card">
+                                Доступ:<span style="color: #cd4040"> Заблокованно</span>
+                            </div>
+                            <div class="info-user-card">
+                                <img src="img/user.png" alt="user">
+                            </div>
+                            <div class="info-user-card">
+                                ПІБ:<span> Єнов Богдан Олександрович</span>
+                            </div>
+                            <div class="info-user-card">
+                                Посада:<span> викладач</span>
+                            </div>
+                            <div class="info-user-card">
+                                Стать:<span> Чоловіча</span>
+                            </div>
+                            <div class="info-user-card">
+                                Статус:<span> Працює</span>
+                            </div>
+                            <button>Детальніше</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="card-list">
+                            <div class="info-user-card">
+                                Доступ:<span style="color: #cd4040"> Заблокованно</span>
+                            </div>
+                            <div class="info-user-card">
+                                <img src="img/user.png" alt="user">
+                            </div>
+                            <div class="info-user-card">
+                                ПІБ:<span> Єнов Богдан Олександрович</span>
+                            </div>
+                            <div class="info-user-card">
+                                Посада:<span> викладач</span>
+                            </div>
+                            <div class="info-user-card">
+                                Стать:<span> Чоловіча</span>
+                            </div>
+                            <div class="info-user-card">
+                                Статус:<span> Працює</span>
+                            </div>
+                            <button>Детальніше</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="card-list">
+                            <div class="info-user-card">
+                                Доступ:<span style="color: #cd4040"> Заблокованно</span>
+                            </div>
+                            <div class="info-user-card">
+                                <img src="img/user.png" alt="user">
+                            </div>
+                            <div class="info-user-card">
+                                ПІБ:<span> Єнов Богдан Олександрович</span>
+                            </div>
+                            <div class="info-user-card">
+                                Посада:<span> викладач</span>
+                            </div>
+                            <div class="info-user-card">
+                                Стать:<span> Чоловіча</span>
+                            </div>
+                            <div class="info-user-card">
+                                Статус:<span> Працює</span>
+                            </div>
+                            <button>Детальніше</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="card-list">
+                            <div class="info-user-card">
+                                Доступ:<span style="color: #cd4040"> Заблокованно</span>
+                            </div>
+                            <div class="info-user-card">
+                                <img src="img/user.png" alt="user">
+                            </div>
+                            <div class="info-user-card">
+                                ПІБ:<span> Єнов Богдан Олександрович</span>
+                            </div>
+                            <div class="info-user-card">
+                                Посада:<span> викладач</span>
+                            </div>
+                            <div class="info-user-card">
+                                Стать:<span> Чоловіча</span>
+                            </div>
+                            <div class="info-user-card">
+                                Статус:<span> Працює</span>
+                            </div>
+                            <button>Детальніше</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/mainpage.js"></script>
+    <script type="text/javascript" src="js/people.js"></script>
+</body>
+</html>
