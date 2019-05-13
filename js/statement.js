@@ -11,7 +11,7 @@ function resultSelect() {
             if (selectCntrl[i].options[selectCntrl[i].selectedIndex].text === 'Залік')
             {
                 selectScale[i].innerHTML = 
-                '<option value="" selected disabled>Оберіть шкалу</option>' + 
+                '<option value="" selected disabled>Оберіть значення</option>' + 
                 '<option value="1">Зараховано</option>' + 
                 '<option value="2">Не зараховано</option>';
             } else {

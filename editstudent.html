@@ -3,9 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Реєстрація</title>
+	<title>Редагування данних студента</title>
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@8.8.3/dist/sweetalert2.min.css">
@@ -16,7 +15,7 @@
         <div id="hamb" class="hamburger hamburger--3dx col-xl-10 col-lg-8 col-md-6 col-sm-4 col-3">
             <div class="hamburger-box">
                 <div class="hamburger-inner">
-                    
+                
                 </div>
             </div>
         </div>
@@ -72,14 +71,6 @@
         </div>
         <div id="main-content" class="col-xl-10 col-lg-9 col-md-8 col-sm-12 main-content">
             <div id="wrapper" class="row wrapper no-gutters">
-                <div class="row btn-toggle no-gutters">
-                    <div class="col">
-                        <input class="btn-box student isSelect" type="button" value="Студент">
-                    </div>
-                    <div class="col">
-                        <input class="btn-box working" type="button" value="Працівник">
-                    </div>
-                </div>
                 <div class="row registration no-gutters">
                     <form id="form-student" class="form-student enableStudent" method="POST"  action="/regStudent" enctype="multipart/form-data">
                         <div class="row row-info">
@@ -207,9 +198,17 @@
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-12 col-md-12 col-info">
-                                <span>Оберіть фотографію</span>
+                                <span>Статус *</span>
+                                <section class="input-box">
+                                    <!-- ТЁМА -->
+                                    <select class="reg-info" name="group_id" required>
+                                        <option value="" selected disabled>Оберіть статус:</option>
+                                        <option value="1">Вчиться</option>
+                                        <option value="2">Не вчиться</option>
+                                    </select>
+                                </section>
                                 <div class="input-box loadfile">
-                                    <div class="input-container ">
+                                    <div class="input-container">
                                         <input type="file" name="photo" id="real-input" accept="image/jpeg,image/png">
                                         <button type="button" class="reg-info browse-btn">
                                             Оберіть файл
@@ -221,153 +220,20 @@
                             </div>
                         </div>
                     </form>
-                    <form id="form-worker" class="form-worker">
-                        <div class="row row-info">
-                            <div class="col-xl-3 col-lg-6 col-md-6 col-info">
-                                <span>ПІБ *</span>
-                                <div class="input-box">
-                                    <i class="fas fa-user"></i>
-                                    <input name="name" class="reg-info" type="text" placeholder="Введіть ПІБ" required>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-6 col-md-6 col-info">
-                                <span>Почтова адреса *</span>
-                                <div class="input-box">
-                                    <i class="fas fa-envelope"></i>
-                                    <input name="email" class="reg-info" type="email" placeholder="Введіть почтову адресу" required>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-6 col-md-6 col-info">
-                                <span>Пароль *</span>
-                                <div class="input-box">
-                                    <i class="fas fa-lock"></i>
-                                    <input id="pass-work" name="password" class="reg-info" type="password" placeholder="Введіть пароль" required>
-                                    <i id="passW" class="fas fa-eye"></i>
-                                    <i id="passW-slash" class="fas fa-eye-slash del-slash"></i>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-6 col-md-6 col-info">
-                                <span>Стать *</span>
-                                <section class="input-box">
-                                    <select class="reg-info" name = "sex" required>
-                                        <option value="" selected disabled>Оберіть вашу стать:</option>
-                                        <option value="man">Чоловіча</option>
-                                        <option value="woman">Жіноча</option>
-                                    </select>
-                                </section>
-                            </div>
-                        </div>
-                        <div class="row row-info">
-                            <div class="col-xl-3 col-lg-6 col-md-6 col-info">
-                                <span>Номер паспорту</span>
-                                <div class="input-box">
-                                    <i class="fas fa-passport"></i>
-                                    <input name="passport_id" class="reg-info" type="text" placeholder="Введіть номер паспорта">
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-6 col-md-6 col-info">
-                                <span>Ідент. номер</span>
-                                <div class="input-box">
-                                    <i class="fas fa-hashtag"></i>
-                                    <input name="rntrs" class="reg-info" type="text" placeholder="Введіть ідент.номер">
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-6 col-md-6 col-info">
-                                <span>Дата народження *</span>
-                                <div class="input-box">
-                                    <i class="fas fa-calendar-alt"></i>
-                                    <input name="birthday" class="reg-info" type="date" placeholder="Введіть дату народження">
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-6 col-md-6 col-info">
-                                <span>Місце народження</span>
-                                <div class="input-box">
-                                    <i class="fas fa-home"></i>
-                                    <input name="registration" class="reg-info" type="text" placeholder="Введіть місце народження">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row row-info">
-                            <div class="col-xl-3 col-lg-6 col-md-6 col-info">
-                                <span>Номер приписного</span>
-                                <div class="input-box">
-                                    <i class="far fa-file-alt"></i>
-                                    <input name="military_id" class="reg-info" type="text" placeholder="Введіть номер приписного">
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-6 col-md-6 col-info">
-                                <span>Дата прийому на роботу *</span>
-                                <div class="input-box">
-                                    <i class="fas fa-calendar-alt"></i>
-                                    <input name="join_work_time" class="reg-info" type="date" placeholder="Введіть дата прийому на роботу" required>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-6 col-md-6 col-info">
-                                <span>Номер телефону</span>
-                                <div class="input-box">
-                                    <i class="fas fa-phone"></i>
-                                    <input name="tel" class="reg-info" type="text" placeholder="Введіть номер телефону">
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-6 col-md-6 col-info">
-                                <span>Посада *</span>
-                                <section class="input-box">
-                                    <!-- ТЁМА -->
-                                    <select class="reg-info" name="position_id" required>
-                                        <option value="" selected disabled>Оберіть посада:</option>
-                                        <option value="1">Денна</option>
-                                        <option value="2">Заочна</option>
-                                    </select>
-                                </section>
-                            </div>
-                        </div>
-                        <div class="row row-info">
-                            <div class="col-xl-4 col-lg-6 col-md-6 col-info">
-                                <span>Кафедра</span>
-                                <section class="input-box curse-info">
-                                    <!-- ТЁМА -->
-                                    <select class="reg-info" name = "department_id">
-                                        <option value="" selected disabled>Оберіть кафедру:</option>
-                                        <option value="1">Скороченний</option>
-                                        <option value="2">Звичайний</option>
-                                    </select>
-                                </section>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6 col-info">
-                                <span>Примітки</span>
-                                <div class="input-box note">
-                                    <textarea name="note" class="reg-info" id="note-worker" cols="30" rows="5"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-12 col-md-12 col-info">
-                                <span>Оберіть фотографію</span>
-                                <div class="input-box loadfile">
-                                    <div class="input-container ">
-                                        <input type="file" name="photo" id="real-input-worker" accept="image/jpeg,image/png">
-                                        <button type="button" class="reg-info browse-btn-worker">
-                                            Оберіть файл
-                                        </button>
-                                    </div>
-                                    <span id="file-text" class="file-info-worker">Файл не обраний</span>
-                                </div>
-                                <span id="comment">* - обов'язкові поля</span>
-                            </div>
-                        </div>
-                    </form>
                 </div>
                 <div class="row btn-option no-gutters">
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                         <button id="cancel">Повернутися назад</button>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 btn-form-submit">
-                        <button class="btn-form form-active"  form="form-student" >Зареєструвати</button>
-                        <button class="btn-form"  form="form-worker" >Зареєструвати</button>
+                        <button class="btn-form form-active"  form="form-student" >Редагувати</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@8.8.3/dist/sweetalert2.min.js"></script> 
-	<script type="text/javascript" src="js/script.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/mainpage.js"></script>
+    <script type="text/javascript" src="js/edituser.js"></script>
 </body>
 </html>

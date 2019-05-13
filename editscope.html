@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Залишити відгук</title>
+	<title>Редагування прав</title>
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
@@ -15,7 +15,7 @@
         <div id="hamb" class="hamburger hamburger--3dx col-xl-10 col-lg-8 col-md-6 col-sm-4 col-3">
             <div class="hamburger-box">
                 <div class="hamburger-inner">
-                    
+                
                 </div>
             </div>
         </div>
@@ -71,53 +71,63 @@
         </div>
         <div id="main-content" class="col-xl-10 col-lg-9 col-md-8 col-sm-12 main-content">
             <div id="wrapper" class="row wrapper no-gutters">
+                <div class="row header-text no-gutters">
+                    <div class="col-12">
+                        <h3 class="header-text__name-user">Користувач: <span>Єнов Богдан Олександрович</span></h3>
+                    </div>
+                </div>
                 <div class="row no-gutters">
                     <div class="col">
-                        <table id="table-exam" class="table info-comm">
+                        <table id="table-exam" class="table role">
                             <thead>
-                                <th>ПІБ<i class="fas fa-sort"></i></th>
-                                <th>Середня оцінка<i class="fas fa-sort"></i></th>
+                                <th>Назва</th>
                                 <th></th>
                             </thead>
-                            <tbody class="table-list">
-                                <td><span>Селіванова А.В</span></td>
-                                <td>
-                                    <div class="progress blue teacher-table">
-                                        <div class="progress-bar" style="width:60%; background:#4381ac;">
-                                            <div class="progress-value">60</div>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td><button class="btn-set-exam">Відгуки</button></td>
+                            <tbody class="table-list role-table">
+                                <td><span>Редагування прав</span></td>
+                                <td><span><input class="tgl tgl-skewed" type="checkbox" id="box-1"><label class="tgl-btn" data-tg-off="OFF" data-tg-on="ON" for="box-1"></label></span></td>
                             </tbody>
-                            <tbody class="table-list">
-                                <td><span>Селіванова А.В </span></td>
-                                <td>
-                                    <div class="progress blue teacher-table">
-                                        <div class="progress-bar" style="width:60%; background:#4381ac;">
-                                            <div class="progress-value">60</div>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td><button class="btn-set-exam">Відгуки</button></td>
+                            <tbody class="table-list role-table">
+                                <td><span>Виставлення пропусків</span></td>
+                                <td><span><input class="tgl tgl-skewed" type="checkbox" id="box-2"><label class="tgl-btn" data-tg-off="OFF" data-tg-on="ON" for="box-2"></label></span></td>
                             </tbody>
-                            <tbody class="table-list">
-                                <td><span>Селіванова А.В</span></td>                            
-                                <td>
-                                    <div class="progress blue teacher-table">
-                                        <div class="progress-bar" style="width:60%; background:#4381ac;">
-                                            <div class="progress-value">60</div>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td><button class="btn-set-exam">Відгуки</button></td>
+                            <tbody class="table-list role-table">
+                                <td><span>Перегляд пропусків</span></td>
+                                <td><span><input class="tgl tgl-skewed" type="checkbox" id="box-3"><label class="tgl-btn" data-tg-off="OFF" data-tg-on="ON" for="box-3"></label></span></td>
+                            </tbody>
+                            <tbody class="table-list role-table">
+                                <td><span>Виставлення оцінок</span></td>
+                                <td><span><input class="tgl tgl-skewed" type="checkbox" id="box-4"><label class="tgl-btn" data-tg-off="OFF" data-tg-on="ON" for="box-4"></label></span></td>
+                            </tbody>
+                            <tbody class="table-list role-table">
+                                <td><span>Створення подій</span></td>
+                                <td><span><input class="tgl tgl-skewed" type="checkbox" id="box-5"><label class="tgl-btn" data-tg-off="OFF" data-tg-on="ON" for="box-5"></label></span></td>
+                            </tbody>
+                            <tbody class="table-list role-table">
+                                <td><span>Перегляд чутливих данних</span></td>
+                                <td><span><input class="tgl tgl-skewed" type="checkbox" id="box-6"><label class="tgl-btn" data-tg-off="OFF" data-tg-on="ON" for="box-6"></label></span></td>
+                            </tbody>
+                            <tbody class="table-list role-table">
+                                <td><span>Редагування данних, чутливих данних, реєстрація</span></td>
+                                <td><span><input class="tgl tgl-skewed" type="checkbox" id="box-7"><label class="tgl-btn" data-tg-off="OFF" data-tg-on="ON" for="box-7"></label></span> </td>
+                            </tbody>
+                            <tbody class="table-list role-table">
+                                <td><span>Редагування розкладу</span></td>
+                                <td><span><input class="tgl tgl-skewed" type="checkbox" id="box-8"><label class="tgl-btn" data-tg-off="OFF" data-tg-on="ON" for="box-8"></label></span></td>
+                            </tbody>
+                            <tbody class="table-list role-table">
+                                <td><span>Менеджмент/ редагування данных о групах и т.п</span></td>
+                                <td><span><input class="tgl tgl-skewed" type="checkbox" id="box-9"><label class="tgl-btn" data-tg-off="OFF" data-tg-on="ON" for="box-9"></label></span></td>
                             </tbody>
                         </table>
                     </div>
                 </div>
-                <div class="row btn-option table-comm no-gutters">
-                    <div class="col-xl-6 col-12">
+                <div class="row btn-option no-gutters">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                         <button id="cancel">Повернутися назад</button>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 btn-form-submit">
+                        <button class="btn-form form-active">Зберегти</button>
                     </div>
                 </div>
             </div>
