@@ -1108,7 +1108,7 @@ input[type="file"] {
   justify-content: flex-end;
 }
 
-tbody:nth-child(even) {
+tr:nth-child(even) {
   background-color: #e7e7e7;
 }
 
@@ -1315,7 +1315,7 @@ button:focus {
   margin-top: 20px;
 }
 
-.table.info-comm tbody td:last-child {
+.table.info-comm tr td:last-child {
   width: 20%;
 }
 
@@ -1349,11 +1349,14 @@ button:focus {
 
 .btn-option.table-comm .our-teacher {
   display: flex;
+}
+
+.btn-option.table-comm .our-teacher:last-child {
   justify-content: flex-end;
 }
 
 .btn-option.table-comm .our-teacher button:first-child {
-  margin-right: 20px;
+  margin: 10px 5px;
 }
 
 .progress .progress-bar:after {
@@ -1765,6 +1768,130 @@ button:focus {
   margin-right: 20px;
 }
 
+/* Control Academy Cards */
+
+.menu-manage-cards {
+  justify-content: center;
+  align-items: center;
+  margin-top: 75px;
+}
+
+.menu-manage-cards__card {
+  border-radius: 3px;
+  border: 2px solid #4381ac;
+  padding: 25px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+  transition: .3s ease all;
+}
+
+.menu-manage-cards__card:hover {
+  border: 1px solid #075a7c;
+  cursor: pointer;
+  color: #4381ac;
+}
+
+.menu-manage-cards__card img{
+  height: 50px;
+}
+
+.menu-manage-cards__card span{
+  font-size: 20px;
+  color: #676767;
+  margin-top: 5px;
+}
+
+.message-for-user a{
+  font-size: 12px;
+  transition: .3s all ease;
+}
+
+.message-for-user a:hover {
+  color: #676767;
+}
+
+.btn-option.header-btn-option, .btn-option.header-btn-option .option-select, .btn-option.header-btn-option .option-select .reg-info{
+  margin: 0;
+}
+
+.btn-option.header-btn-option .option-select .reg-info {
+  height: 44px;
+  border: 2px solid #4381ac;
+}
+
+#search{
+  top: 27%;
+}
+
+#add {
+  width: 100%;
+}
+
+.table-info-academ {
+  margin-top: 50px;
+}
+
+.table-info-academ .table td{
+  vertical-align: middle;
+  text-align: right;
+}
+
+.table-info-academ .table td:first-child{
+  text-align: left;
+}
+
+
+.table-list__btn {
+  color: #4381ac;
+  width: 100%;
+  border: 2px solid #4381ac;
+  background: transparent;
+  font-size: 16px;
+  padding: 5px 40px;
+  border-radius: 3px;
+  margin: 10px 0px;
+  transition: 0.3s all ease;
+}
+
+.table-list__btn:hover {
+  color: #efefef;
+  border: 2px solid #4381ac;
+  background: #4381ac;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.table-list__btn.red {
+  color: #ac4343;
+  width: 100%;
+  border: 2px solid #ac4343;
+  background: transparent;
+  font-size: 16px;
+  padding: 5px 40px;
+  border-radius: 3px;
+  margin: 10px 0px;
+  transition: 0.3s all ease;
+}
+
+.table-list__btn.red:hover {
+  color: #efefef;
+  border: 2px solid #ac4343;
+  background: #ac4343;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.table-info-academ .table td.table-list__spec{
+  text-align: left;
+}
+
+.table-list .td_with_btn {
+  width: 10%;
+}
+
 .hamburger {
   display: inline-block;
   cursor: pointer;
@@ -1881,7 +2008,10 @@ button:focus {
 
   .wrapper .table td {
     font-size: 14px;
-    padding: 5px 0px;
+    /* padding: 5px 0px; */
+  }
+  .table.info-comm tr td:last-child {
+     width: max-content; 
   }
 
   .table.role th{
@@ -1957,9 +2087,6 @@ button:focus {
     margin-top: 20px;
     margin-left: 0px;
   }
-  .btn-option.table-comm {
-    margin-top: -20px;
-  }
   .btn-option.table-comm button {
     width: 100%;
   }
@@ -1967,6 +2094,11 @@ button:focus {
     padding: 20px 15px;
   }
   .header-info-text {
+    margin-top: 0px;
+  }
+  .menu-manage-cards {
+    justify-content: flex-start;
+    align-items: flex-start;
     margin-top: 0px;
   }
 }
@@ -1998,6 +2130,51 @@ button:focus {
     width: 100%;
     margin: 10px 0;
   }
+  #search {
+    top: 35%;
+  }
+  .btn-option.header-btn-option, .btn-option.header-btn-option .option-select, .btn-option.header-btn-option .option-select .reg-info{
+    margin: 10px 0;
+  }
+  .table-list__btn {
+    color: #4381ac;
+    width: 100%;
+    border: 2px solid #4381ac;
+    background: transparent;
+    font-size: 14px;
+    padding: 5px 20px;
+    border-radius: 3px;
+    margin: 10px 0px;
+    transition: 0.3s all ease;
+  }
+  
+  .table-list__btn:hover {
+    color: #efefef;
+    border: 2px solid #4381ac;
+    background: #4381ac;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .table-list__btn.red {
+    color: #ac4343;
+    width: 100%;
+    border: 2px solid #ac4343;
+    background: transparent;
+    font-size: 14px;
+    padding: 5px 20px;
+    border-radius: 3px;
+    margin: 10px 0px;
+    transition: 0.3s all ease;
+  }
+  
+  .table-list__btn.red:hover {
+    color: #efefef;
+    border: 2px solid #ac4343;
+    background: #ac4343;
+    cursor: pointer;
+    text-decoration: none;
+  }
 }
 
 @media (max-width: 810px) {
@@ -2016,6 +2193,7 @@ button:focus {
     padding-left: 70px;
     text-align: left;
   }
+  
 }
 
 @media (max-width: 767px) {
@@ -2082,6 +2260,7 @@ button:focus {
   .user-info-cards {
     text-align: center;
   }
+
 }
 
 @media (max-width: 575px) {
@@ -2109,7 +2288,50 @@ button:focus {
     flex-direction: column-reverse;
   }
 
-  .btn-option.table-comm {
-    margin-top: -60px;
+  .wrapper .btn-option.header-btn-option {
+    display: flex;
+    flex-direction: column;
+  }
+  .table-info-academ .table td{
+    font-size: 12px; 
+  }
+  .table-list__btn {
+    color: #4381ac;
+    width: 100%;
+    border: 2px solid #4381ac;
+    background: transparent;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 3px;
+    margin: 10px 0px;
+    transition: 0.3s all ease;
+  }
+  
+  .table-list__btn:hover {
+    color: #efefef;
+    border: 2px solid #4381ac;
+    background: #4381ac;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .table-list__btn.red {
+    color: #ac4343;
+    width: 100%;
+    border: 2px solid #ac4343;
+    background: transparent;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 3px;
+    margin: 10px 0px;
+    transition: 0.3s all ease;
+  }
+  
+  .table-list__btn.red:hover {
+    color: #efefef;
+    border: 2px solid #ac4343;
+    background: #ac4343;
+    cursor: pointer;
+    text-decoration: none;
   }
 }

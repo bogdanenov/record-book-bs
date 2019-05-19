@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Залікова книжка</title>
-	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Менеджмент академії - інститути</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@8.8.3/dist/sweetalert2.min.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
+
 <body>
     <div class="row header">
         <div id="hamb" class="hamburger hamburger--3dx col-xl-10 col-lg-8 col-md-6 col-sm-4 col-3">
             <div class="hamburger-box">
                 <div class="hamburger-inner">
-                    
+
                 </div>
             </div>
         </div>
@@ -62,7 +65,8 @@
                         <a class="item" href="#"><i class="fas fa-users-cog"></i><span>Особисті справи</span></a>
                         <a class="item" href="#"><i class="fas fa-sliders-h"></i><span>Менеджмент академії</span></a>
                         <a class="item" href="#"><i class="fas fa-file-contract"></i><span>Відомість</span></a>
-                        <a class="item" href="#"><i class="fas fa-clipboard-check"></i><span>Журнал відвідувань</span></a>
+                        <a class="item" href="#"><i class="fas fa-clipboard-check"></i><span>Журнал
+                                відвідувань</span></a>
                         <a class="item" href="#"><i class="fas fa-calendar-week"></i><span>Події</span></a>
                         <a class="item" href="#"><i class="fas fa-clipboard-list"></i><span>Навантаження</span></a>
                         <a class="item" href="#"><i class="fas fa-user-plus"></i><span>Реєстрація користувача</span></a>
@@ -72,96 +76,60 @@
         </div>
         <div id="main-content" class="col-xl-10 col-lg-9 col-md-8 col-sm-12 main-content">
             <div id="wrapper" class="row wrapper no-gutters">
-                <div class="row btn-toggle no-gutters">
-                    <div class="col">
-                        <input class="btn-box exam isSelect" type="button" value="Екзамени">
+                <div class="row btn-option header-btn-option">
+                    <div class="col-xl-3 col-lg-5 col-12">
+                        <button id="add">Додати</button>
                     </div>
-                    <div class="col">
-                        <input class="btn-box eval" type="button" value="Залік">
+                    <div class="col-xl-3 offset-xl-6 col-lg-5 offset-lg-1 col-12 row-info option-filter no-gutters">
+                        <div class="col-12 col-info option-select manage-academ">
+                            <div class="input-box">
+                                <i id="search" class="fas fa-search"></i>
+                                <input name="search" class="reg-info" type="text" placeholder="Пошук">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="row table-block no-gutters">
+                <div class="row no-gutters table-info-academ">
                     <div class="col">
                         <table id="table-exam" class="table">
                             <thead>
-                                <th>Назва предмета</th>
-                                <th>ПІБ викладача</th>
-                                <th>К-сть балів</th>
-                                <th>Міжнародна шкала</th>
-                                <th>Дата</th>
+                                <th>Назва інститута</th>
+                                <th></th>
+                                <th></th>
                             </thead>
                             <tbody>
                                 <tr class="table-list">
-                                    <td>ІАД</td>
-                                    <td>Селіванова А.В</td>
-                                    <td>95</td>
-                                    <td>Відмінно</td>
-                                    <td>03/05/2019</td>
+                                    <td class="name-inst">Технологічний інститут харчової промисловості ім. М.В. Ломоносова</td>
+                                    <td class="td_with_btn"> <a href="#" class="table-list__btn edit-btns">Редагувати</a> </td>
+                                    <td class="td_with_btn"> <a href="#" class="table-list__btn red delete-btns">Видалити</a> </td>
                                 </tr>
                                 <tr class="table-list">
-                                    <td>ІАД</td>
-                                    <td>Селіванова А.В</td>
-                                    <td>95</td>
-                                    <td>Відмінно</td>
-                                    <td>03/05/2019</td>
+                                    <td class="name-inst">Навчально-науковий інститут комп'ютерних систем і технологій "Індустрія 4.0" ім. П.М. Платонова</td>
+                                    <td class="td_with_btn"> <a href="#" class="table-list__btn edit-btns">Редагувати</a> </td>
+                                    <td class="td_with_btn"> <a href="#" class="table-list__btn red delete-btns">Видалити</a> </td>
                                 </tr>
                                 <tr class="table-list">
-                                    <td>ІАД</td>
-                                    <td>Селіванова А.В</td>
-                                    <td>95</td>
-                                    <td>Відмінно</td>
-                                    <td>03/05/2019</td>
+                                    <td class="name-inst">Навчально-науковий інститут прикладної економіки та менеджменту ім. Г.Е. Вейнштейн</td>
+                                    <td class="td_with_btn"> <a href="#" class="table-list__btn edit-btns">Редагувати</a> </td>
+                                    <td class="td_with_btn"> <a href="#" class="table-list__btn red delete-btns">Видалити</a> </td>
+                                </tr>
+                                <tr class="table-list">
+                                    <td class="name-inst">Навчально-науковий інститут холоду, кріотехнологій і екоенергетика ім. Мартинівського В.С.</td>
+                                    <td class="td_with_btn"> <a href="#" class="table-list__btn edit-btns">Редагувати</a> </td>
+                                    <td class="td_with_btn"> <a href="#" class="table-list__btn red delete-btns">Видалити</a> </td>
                                 </tr>
                             </tbody>
                         </table>
-                        <table id="table-eval" class="table disabled-table">
-                            <thead>
-                                <th>Назва предмета</th>
-                                <th>ПІБ викладача</th>
-                                <th>К-сть балів</th>
-                                <th>Міжнародна шкала</th>
-                                <th>Дата</th>
-                            </thead>
-                            <tbody>
-                                <tr class="table-list">
-                                    <td>ІАД</td>
-                                    <td>Селіванова А.В</td>
-                                    <td>95</td>
-                                    <td>Залік</td>
-                                    <td>03/05/2019</td>
-                                </tr>
-                                <tr class="table-list">
-                                    <td>ІАД</td>
-                                    <td>Селіванова А.В</td>
-                                    <td>95</td>
-                                    <td>Залік</td>
-                                    <td>03/05/2019</td>
-                                </tr>
-                                <tr class="table-list">
-                                    <td>ІАД</td>
-                                    <td>Селіванова А.В</td>
-                                    <td>95</td>
-                                    <td>Залік</td>
-                                    <td>03/05/2019</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="row toggle-eval no-gutters">
-                    <div class="el col-xl-4 col-lg-12">
-                        <button class="btn-set-exam">Попередній семестр</button>
-                    </div>
-                    <div class="el col-xl-4 col-lg-12">
-                        <p>2016-2017</p><p>(1 семестр)</p>
-                    </div>
-                    <div class="el col-xl-4 col-lg-12">
-                        <button class="btn-set-exam" disabled>Наступний семестр</button></div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@8.8.3/dist/sweetalert2.min.js"></script> 
     <script type="text/javascript" src="js/mainpage.js"></script>
-	<script type="text/javascript" src="js/record.js"></script>	
+    <script type="text/javascript" src="js/manage.js"></script>
 </body>
 </html>
