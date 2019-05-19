@@ -1892,6 +1892,51 @@ button:focus {
   width: 10%;
 }
 
+.get-list {
+  width: 100%;
+  background-color: transparent;
+  color: #4381ac;
+  border: 2px solid #4381ac;
+  border-radius: 3px;
+  height: 38px;
+}
+
+.col-info.get {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.btn-option #add-load{
+  margin-top: 40px;
+}
+
+.row-info.load-manage {
+  margin: 0;
+}
+
+.edit-load {
+  justify-content: center;
+}
+
+.edit-load .form-edit {
+  border: 2px solid #4381ac;
+  padding: 30px 20px;
+}
+
+.btn-option .add-load button {
+  width: 100%;
+}
+
+.btn-option.add-load-form {
+  flex-direction: column-reverse;
+}
+
+.get-list:hover {
+  background-color: #4381ac;
+  color:#efefef;
+}
+
 .hamburger {
   display: inline-block;
   cursor: pointer;
