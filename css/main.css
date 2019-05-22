@@ -1924,12 +1924,24 @@ button:focus {
   padding: 30px 20px;
 }
 
+.fio-comment span{
+  font-size: 24px;
+}
+
 .btn-option .add-load button {
   width: 100%;
 }
 
 .btn-option.add-load-form {
   flex-direction: column-reverse;
+}
+
+.input-disable{
+  opacity:0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin-top:0 !important;
+  margin-bottom: 0 !important;
 }
 
 .get-list:hover {
