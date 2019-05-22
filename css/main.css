@@ -1423,10 +1423,9 @@ button:focus {
 }
 
 .services-text img {
-  display: block;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  width: 75px;
+  float: right;
+  margin-left: 25px;
 }
 
 .card-sources {
