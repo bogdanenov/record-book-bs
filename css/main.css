@@ -1726,6 +1726,7 @@ button:focus {
 .header-info-text img {
   width: 102px;
   height: 102px;
+  border-radius: 50%;
 }
 
 .header-info-text__name {
