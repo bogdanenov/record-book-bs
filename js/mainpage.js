@@ -11,10 +11,12 @@ window.onload = function() {
       navbar.classList.remove("is-visible");
       navbar.style.height = "auto";
       content.style.filter = "none";
+      content.style.pointerEvents = "auto";
       stateHamburger = !stateHamburger;
     } else {
       hamburger.classList.toggle("is-active");
       content.style.filter = "blur(10px)";
+      content.style.pointerEvents = "none";
       navbar.classList.toggle("is-visible");
       if (content.clientHeight > window.innerHeight)
         navbar.style.height = content.clientHeight + "px";
@@ -46,6 +48,7 @@ window.onload = function() {
     }
     if (width > 768) {
       document.body.style.overflow = "auto";
+      content.style.pointerEvents = "auto";
       navbar.style.height = "auto";
       content.style = null;
     } else {

@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Корисна інформація</title>
-	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Корисна інформація</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@8.8.3/dist/sweetalert2.min.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
+
 <body>
     <div class="row header">
         <div id="hamb" class="hamburger hamburger--3dx col-xl-10 col-lg-8 col-md-6 col-sm-4 col-3">
             <div class="hamburger-box">
                 <div class="hamburger-inner">
-                    
+
                 </div>
             </div>
         </div>
@@ -61,7 +65,8 @@
                         <a class="item" href="#"><i class="fas fa-users-cog"></i><span>Особисті справи</span></a>
                         <a class="item" href="#"><i class="fas fa-sliders-h"></i><span>Менеджмент академії</span></a>
                         <a class="item" href="#"><i class="fas fa-file-contract"></i><span>Відомість</span></a>
-                        <a class="item" href="#"><i class="fas fa-clipboard-check"></i><span>Журнал відвідувань</span></a>
+                        <a class="item" href="#"><i class="fas fa-clipboard-check"></i><span>Журнал
+                                відвідувань</span></a>
                         <a class="item" href="#"><i class="fas fa-calendar-week"></i><span>Події</span></a>
                         <a class="item" href="#"><i class="fas fa-clipboard-list"></i><span>Навантаження</span></a>
                         <a class="item" href="#"><i class="fas fa-user-plus"></i><span>Реєстрація користувача</span></a>
@@ -72,22 +77,45 @@
         <div id="main-content" class="col-xl-10 col-lg-9 col-md-8 col-sm-12 main-content">
             <div id="wrapper" class="row wrapper no-gutters">
                 <div class="row">
+                    <div class="col-1 offset-11 infoalert">
+                        <a class="button" href="#popup"><i class="fas fa-info"></i></a>
+                        <div class="popup" id="popup">
+                            <div class="popup-inner">
+                                <div class="popup__text">
+                                    <h1>Корисна інформація</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex velit, viverra
+                                    </p>
+                                </div>
+                                <a class="popup__close" href="#">X</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col services-name">
                         <h4>Про наш сервіс</h4>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col services-text">
-                            <img src="img/gerb.png" alt="user-photo">
-                            <p>
-                            Одеська національна академія харчових технологій не тільки один з найстаріших освітніх і наукових центрів України, 
-                            але й визнаний лідер з підготовки магістрів і бакалаврів. Щороку створюються сучасні навчальні науково-дослідні лабораторії, 
-                            публікуються десятки підручників і монографій, публікуються науково-практичні видання. Високі індекси цитування наших вчених, 
-                            участь у численних міжнародних програмах і грантах, практичне стажування студентів на кращих закордонних підприємствах,
-                            активне членство у 14-ти міжнародних організаціях і щорічна сертифікація за системою міжнародних стандартів ISO 9001:2015 підтверджують 
-                            високий статус і міжнародне визнання здобутків колективу ОНАХТ. Данна залікова книжка є першим етап цифровізації системи оцінювання 
-                            та документообігу загалом. Студенти, викладачі та адміністрація матимуть миттєвий доступ до актуальної інформації з успішності академічних
-                            груп та їх відвідувань, тощо. У подальшому буде можливість генерувати звітню інформацію будь-якого гатунку.
+                        <img src="img/gerb.png" alt="user-photo">
+                        <p>
+                            Одеська національна академія харчових технологій не тільки один з найстаріших освітніх і
+                            наукових центрів України,
+                            але й визнаний лідер з підготовки магістрів і бакалаврів. Щороку створюються сучасні
+                            навчальні науково-дослідні лабораторії,
+                            публікуються десятки підручників і монографій, публікуються науково-практичні видання.
+                            Високі індекси цитування наших вчених,
+                            участь у численних міжнародних програмах і грантах, практичне стажування студентів на кращих
+                            закордонних підприємствах,
+                            активне членство у 14-ти міжнародних організаціях і щорічна сертифікація за системою
+                            міжнародних стандартів ISO 9001:2015 підтверджують
+                            високий статус і міжнародне визнання здобутків колективу ОНАХТ. Данна залікова книжка є
+                            першим етап цифровізації системи оцінювання
+                            та документообігу загалом. Студенти, викладачі та адміністрація матимуть миттєвий доступ до
+                            актуальної інформації з успішності академічних
+                            груп та їх відвідувань, тощо. У подальшому буде можливість генерувати звітню інформацію
+                            будь-якого гатунку.
                         </p>
                     </div>
                 </div>
@@ -120,7 +148,7 @@
                     <div class="col-xl-3 col-lg-6 col-md-12">
                         <div class="card-sources">
                             <div class="sources-img">
-                                <img src="img/url.png" alt="url">                                
+                                <img src="img/url.png" alt="url">
                             </div>
                             <p class="sources-name">Музей</p>
                             <p class="sources-description">Музей ОНАПТ</p>
@@ -130,7 +158,7 @@
                     <div class="col-xl-3 col-lg-6 col-md-12">
                         <div class="card-sources">
                             <div class="sources-img">
-                                <img src="img/url.png" alt="url">                                
+                                <img src="img/url.png" alt="url">
                             </div>
                             <p class="sources-name">Символика</p>
                             <p class="sources-description">Символика ОНАПТ</p>
@@ -147,7 +175,7 @@
                     <div class="col-xl-3 col-lg-6 col-md-12">
                         <div class="card-sources">
                             <div class="sources-img">
-                                <img src="img/doc.png" alt="doc"> 
+                                <img src="img/doc.png" alt="doc">
                             </div>
                             <p class="sources-name">Заяви</p>
                             <p class="sources-description">Приклади заяв до деканату</p>
@@ -157,7 +185,7 @@
                     <div class="col-xl-3 col-lg-6 col-md-12">
                         <div class="card-sources">
                             <div class="sources-img">
-                                <img src="img/pdf.png" alt="doc">                                 
+                                <img src="img/pdf.png" alt="doc">
                             </div>
                             <p class="sources-name">Історія академії </p>
                             <p class="sources-description">Книга по історії академії</p>
@@ -167,7 +195,7 @@
                     <div class="col-xl-3 col-lg-6 col-md-12">
                         <div class="card-sources">
                             <div class="sources-img">
-                                <img src="img/pdf.png" alt="doc"> 
+                                <img src="img/pdf.png" alt="doc">
                             </div>
                             <p class="sources-name">Титульний лист</p>
                             <p class="sources-description">Титульний лист для лаб.робіт</p>
@@ -177,7 +205,7 @@
                     <div class="col-xl-3 col-lg-6 col-md-12">
                         <div class="card-sources">
                             <div class="sources-img">
-                                <img src="img/doc.png" alt="doc"> 
+                                <img src="img/doc.png" alt="doc">
                             </div>
                             <p class="sources-name">Довідник користувача</p>
                             <p class="sources-description">Довідник по використанню сервіса</p>
@@ -188,7 +216,10 @@
             </div>
         </div>
     </div>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/mainpage.js"></script>
 </body>
+
 </html>
