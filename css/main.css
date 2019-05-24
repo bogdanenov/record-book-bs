@@ -2005,13 +2005,12 @@ button:focus {
 }
 .button {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 12px;
   border-radius: 50%;
   background-color: transparent;
   border: 2px solid #4381ac;
   color: #4381ac;
   padding: 4px 10px;
-  margin-left: 12px;
   margin-bottom: 20px;
   transition: .3s ease-in-out;
 }
@@ -2106,6 +2105,21 @@ button:focus {
   background-color: #4381ac;
   color: #efefef;
   text-decoration: none;
+}
+
+.btn-option .btn-form.red-btn {
+  border: 2px solid #ac4343;
+  color: #ac4343;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.btn-option .btn-form.red-btn:hover{
+  background-color: #ac4343;
+  color: #efefef;
+  cursor: pointer;
 }
 
 .hamburger {
