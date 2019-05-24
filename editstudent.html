@@ -51,10 +51,10 @@
             <div class="row menu-block no-gutters">
                 <ul class="menu">
                     <li class="menu__item">
+                        <a class="item" href="#"><i class="fas fa-home"></i><span>Головна</span></a>
                         <a class="item" href="#"><i class="fas fa-address-book"></i><span>Залікова книжка</span></a>
                         <a class="item" href="#"><i class="fas fa-th-list"></i><span>Ваші предмети</span></a>
                         <a class="item" href="#"><i class="fas fa-clock"></i><span>Розклад</span></a>
-                        <a class="item" href="#"><i class="fas fa-info-circle"></i><span>Корисна інформація</span></a>
                         <a class="item" href="#"><i class="fas fa-comments"></i><span>Відгуки про викладачів</span></a>
                         <a class="item" href="#"><i class="far fa-calendar-alt"></i><span>Колендар подій</span></a>
                         <a class="item" href="#"><i class="far fa-file-alt"></i><span>Відправити заяву</span></a>
@@ -78,14 +78,14 @@
                                 <span>ПІБ *</span>
                                 <div class="input-box">
                                     <i class="fas fa-user"></i>
-                                    <input name="name" class="reg-info" type="text" placeholder="Введіть ПІБ" required>
+                                    <input name="name" class="reg-info" type="text" placeholder="Введіть ПІБ повністю" required>
                                 </div>
                             </div>
                             <div class="col-xl-3 col-lg-6 col-md-6 col-info">
-                                <span>Почтова адреса *</span>
+                                <span>Електронна пошта *</span>
                                 <div class="input-box">
                                     <i class="fas fa-envelope"></i>
-                                    <input name="email" class="reg-info" type="email" placeholder="Введіть почтову адресу" required>
+                                    <input name="email" class="reg-info" type="email" placeholder="Введіть електронну пошту" required>
                                 </div>
                             </div>
                             <div class="col-xl-3 col-lg-6 col-md-6 col-info">
@@ -110,10 +110,17 @@
                         </div>
                         <div class="row row-info">
                             <div class="col-xl-3 col-lg-6 col-md-6 col-info">
-                                <span>Номер паспорту</span>
+                                <span>Серія паспорту</span>
                                 <div class="input-box">
                                     <i class="fas fa-passport"></i>
-                                    <input name="passport_id" class="reg-info" type="text" placeholder="Введіть номер паспорта">
+                                    <input name="s_passport" class="reg-info" type="text" placeholder="Введіть серію паспорта">
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-info">
+                                <span>Номер паспорту *</span>
+                                <div class="input-box">
+                                    <i class="fas fa-passport"></i>
+                                    <input name="passport_id" class="reg-info" type="text" placeholder="Введіть номер паспорта" required>
                                 </div>
                             </div>
                             <div class="col-xl-3 col-lg-6 col-md-6 col-info">
@@ -130,6 +137,8 @@
                                     <input name="birthday" class="reg-info" type="date" placeholder="Введіть дату народження">
                                 </div>
                             </div>
+                        </div>
+                        <div class="row row-info">
                             <div class="col-xl-3 col-lg-6 col-md-6 col-info">
                                 <span>Місце реєстрації</span>
                                 <div class="input-box">
@@ -137,8 +146,6 @@
                                     <input name="registration" class="reg-info" type="text" placeholder="Введіть місце реєстрації">
                                 </div>
                             </div>
-                        </div>
-                        <div class="row row-info">
                             <div class="col-xl-3 col-lg-6 col-md-6 col-info">
                                 <span>Номер приписного</span>
                                 <div class="input-box">
@@ -154,21 +161,11 @@
                                 </div>
                             </div>
                             <div class="col-xl-3 col-lg-6 col-md-6 col-info">
-                                <span>Номер телефону</span>
+                                <span>Мобільний телефон *</span>
                                 <div class="input-box">
                                     <i class="fas fa-phone"></i>
-                                    <input name="tel" class="reg-info" type="text" placeholder="Введіть номер телефону">
+                                    <input name="tel" class="reg-info" type="text" placeholder="Введіть номер телефона" required>
                                 </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-6 col-md-6 col-info">
-                                <span>Форма начання *</span>
-                                <section class="input-box">
-                                    <select class="reg-info" name="form_study" required>
-                                        <option value="" selected disabled>Оберіть форму навчання:</option>
-                                        <option value="full_time">Денна</option>
-                                        <option value="not_full_time">Заочна</option>
-                                    </select>
-                                </section>
                             </div>
                         </div>
                         <div class="row row-info">
@@ -192,6 +189,14 @@
                                 </section>
                             </div>
                             <div class="col-xl-4 col-lg-6 col-md-6 col-info">
+                                <span>Форма начання *</span>
+                                <section class="input-box" id="note-section">
+                                    <select class="reg-info" name="form_study" required>
+                                        <option value="" selected disabled>Оберіть форму навчання:</option>
+                                        <option value="full_time">Денна</option>
+                                        <option value="not_full_time">Заочна</option>
+                                    </select>
+                                </section>
                                 <span>Примітки</span>
                                 <div class="input-box note">
                                     <textarea name="note" class="reg-info" id="note" cols="30" rows="5"></textarea>
@@ -207,7 +212,7 @@
                                         <option value="2">Не вчиться</option>
                                     </select>
                                 </section>
-                                <div class="input-box loadfile">
+                                <div class="input-box loadfile test">
                                     <div class="input-container">
                                         <input type="file" name="photo" id="real-input" accept="image/jpeg,image/png">
                                         <button type="button" class="reg-info browse-btn">

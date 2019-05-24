@@ -3,6 +3,11 @@ window.onload = function() {
     var pass = document.getElementById("pass");
     var passSlash = document.getElementById("pass-slash");
     var passwordInput = document.getElementById("passlogin");
+    var help = document.getElementById('help');
+
+    help.addEventListener('click', function(){
+    });
+
 
     pass.addEventListener('click', function() {
         pass.classList.toggle('del-slash');
