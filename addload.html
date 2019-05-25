@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Менеджмент академії - посади</title>
+    <title>Додати навантаження</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -77,55 +77,68 @@
         </div>
         <div id="main-content" class="col-xl-10 col-lg-9 col-md-8 col-sm-12 main-content">
             <div id="wrapper" class="row wrapper no-gutters">
-                <div class="row btn-option header-btn-option no-gutters">
-                    <div class="col-xl-3 col-lg-5 col-12">
-                        <button id="add">Додати</button>
-                    </div>
-                    <div class="col-xl-3 offset-xl-6 col-lg-5 offset-lg-1 col-12 row-info option-filter no-gutters">
-                        <div class="col-12 col-info option-select manage-academ">
-                            <div class="input-box">
-                                <i id="search" class="fas fa-search"></i>
-                                <input name="search" class="reg-info" type="text" placeholder="Пошук">
+                <div class="row edit-load no-gutters">
+                    <div class="col-xl-6 col-9">
+                        <div class="row-info load-manage no-gutters form-edit">
+                            <div class="col-12 col-info">
+                                <span>Викладач</span>
+                                <section class="input-box">
+                                    <select class="reg-info" name = "user" required>
+                                        <option value="" selected disabled>Оберіть викладача:</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                    </select>
+                                </section>
+                            </div>  
+                            <div class="col-12 col-info">
+                                <span>Предмет</span>
+                                <section class="input-box">
+                                    <select class="reg-info" name = "item" required>
+                                        <option value="" selected disabled>Оберіть предмет:</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                    </select>
+                                </section>
+                            </div>
+                            <div class="col-12 col-info">
+                                <span>Група</span>
+                                <section class="input-box">
+                                    <select class="reg-info" name = "group" required>
+                                        <option value="" selected disabled>Оберіть групу:</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                    </select>
+                                </section>
+                            </div>
+                            <div class="col-12 col-info">
+                                <span>Асистент</span>
+                                <section class="input-box">
+                                    <select class="reg-info" name = "as" required>
+                                        <option value="" selected disabled>Оберіть асистента:</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                    </select>
+                                </section>
+                            </div>
+                            <div class="col-12 col-info">
+                                <span>Семестр</span>
+                                <section class="input-box">
+                                    <select class="reg-info" name = "sem" required>
+                                        <option value="" selected disabled>Оберіть семестр:</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                    </select>
+                                </section>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="row no-gutters table-info-academ">
-                    <div class="col">
-                        <table id="table-exam" class="table">
-                            <thead>
-                                <th>Назва посади</th>
-                                <th></th>
-                                <th></th>
-                            </thead>
-                            <tbody>
-                                <tr class="table-list">
-                                    <td class="name-inst">Викладач</td>
-                                    <td class="td_with_btn"> <a href="#" class="table-list__btn edit-btns">Редагувати</a> </td>
-                                    <td class="td_with_btn"><a href="#" class="table-list__btn red delete-btns">Видалити</a></td>
-                                </tr>
-                                <tr class="table-list">
-                                    <td class="name-inst">Ректор</td>
-                                    <td class="td_with_btn"> <a href="#" class="table-list__btn edit-btns">Редагувати</a> </td>
-                                    <td class="td_with_btn"><a href="#" class="table-list__btn red delete-btns">Видалити</a></td>
-                                </tr>
-                                <tr class="table-list">
-                                    <td class="name-inst">Декан</td>
-                                    <td class="td_with_btn"> <a href="#" class="table-list__btn edit-btns">Редагувати</a> </td>
-                                    <td class="td_with_btn"><a href="#" class="table-list__btn red delete-btns">Видалити</a></td>
-                                </tr>
-                                <tr class="table-list">
-                                    <td class="name-inst">Директор</td>
-                                    <td class="td_with_btn"> <a href="#" class="table-list__btn edit-btns">Редагувати</a> </td>
-                                    <td class="td_with_btn"><a href="#" class="table-list__btn red delete-btns">Видалити</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="row btn-option infousers no-gutters">
-                    <div class="col-xl-3 col-lg-12">
-                        <button class="btn-form form-active">Повернутися назад</button>
+                        <div class="row no-gutters btn-option add-load-form">
+                            <div class="col-12 add-load">
+                                <button id="add-load" class="btn-form form-active">Повернутися назад</button>
+                            </div>
+                            <div class="col-12 add-load btn-form-submit">
+                                <button id="add-load" class="btn-form form-active">Додати</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -136,6 +149,5 @@
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@8.8.3/dist/sweetalert2.min.js"></script> 
     <script type="text/javascript" src="js/mainpage.js"></script>
-    <script type="text/javascript" src="js/manage.js"></script>
 </body>
 </html>

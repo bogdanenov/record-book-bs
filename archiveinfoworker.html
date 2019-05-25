@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Менеджмент академії - посади</title>
+    <title>Особиста справа працівника</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -77,55 +77,86 @@
         </div>
         <div id="main-content" class="col-xl-10 col-lg-9 col-md-8 col-sm-12 main-content">
             <div id="wrapper" class="row wrapper no-gutters">
-                <div class="row btn-option header-btn-option no-gutters">
-                    <div class="col-xl-3 col-lg-5 col-12">
-                        <button id="add">Додати</button>
+                <div class="row no-gutters header-info-text">
+                    <div class="col-12 header-info-text__photo">
+                        <img src="img/photo.png" alt="user-photo">
                     </div>
-                    <div class="col-xl-3 offset-xl-6 col-lg-5 offset-lg-1 col-12 row-info option-filter no-gutters">
-                        <div class="col-12 col-info option-select manage-academ">
-                            <div class="input-box">
-                                <i id="search" class="fas fa-search"></i>
-                                <input name="search" class="reg-info" type="text" placeholder="Пошук">
+                    <div class="col-12 header-info-text__name">
+                        <span>Єнов Богдан Олександрович</span>
+                    </div>
+                </div>
+                <div class="row user-info-cards">
+                    <div class="col-xl-4 offset-xl-2 col-lg-6">
+                        <div class="user-info-cards-card">
+                            <div class="user-info-cards__text">
+                                Стать: <span>Чоловіча</span>
+                            </div>
+                            <div class="user-info-cards__text">
+                                Місце народження: <span>Очаков</span>
+                            </div>
+                            <div class="user-info-cards__text">
+                                Посада: <span>Викладач</span>
+                            </div>
+                            <div class="user-info-cards__text">
+                                Статус: <span>Працює</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6">
+                        <div class="user-info-cards-card">
+                            <div class="user-info-cards__text">
+                                Номер паспорту: <span>jWdsadda232asdW</span>
+                            </div>
+                            <div class="user-info-cards__text">
+                                Номер приписного: <span>jWdsadda232asd</span>
+                            </div>
+                            <div class="user-info-cards__text">
+                                Ідент. номер: <span>jWdsadda232asdWdsac</span>
+                            </div>
+                            <div class="user-info-cards__text">
+                                Доступ: <span style="color: #52ac43">Відкритий</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 offset-xl-2 col-lg-6">
+                        <div class="user-info-cards-card">
+                            <div class="user-info-cards__text">
+                                Почтова адреса: <span>bikke.cat@gmail.com</span>
+                            </div>
+                            <div class="user-info-cards__text">
+                                Номер телефона: <span>0934473345</span>
+                            </div>
+                            <div class="user-info-cards__text">
+                                Дата народження: <span>23.10.1997</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6">
+                        <div class="user-info-cards-card">
+                            <div class="user-info-cards__text">
+                                Дата прийому: <span>09.05.2019</span>
+                            </div>
+                            <div class="user-info-cards__text">
+                                Кафедра: <span>ІУС</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 offset-xl-2 col-,g-12">
+                        <div class="user-info-cards-card">
+                            <div class="user-info-cards__text">
+                                Примітки: <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore
+                                    magna aliqua.</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row no-gutters table-info-academ">
-                    <div class="col">
-                        <table id="table-exam" class="table">
-                            <thead>
-                                <th>Назва посади</th>
-                                <th></th>
-                                <th></th>
-                            </thead>
-                            <tbody>
-                                <tr class="table-list">
-                                    <td class="name-inst">Викладач</td>
-                                    <td class="td_with_btn"> <a href="#" class="table-list__btn edit-btns">Редагувати</a> </td>
-                                    <td class="td_with_btn"><a href="#" class="table-list__btn red delete-btns">Видалити</a></td>
-                                </tr>
-                                <tr class="table-list">
-                                    <td class="name-inst">Ректор</td>
-                                    <td class="td_with_btn"> <a href="#" class="table-list__btn edit-btns">Редагувати</a> </td>
-                                    <td class="td_with_btn"><a href="#" class="table-list__btn red delete-btns">Видалити</a></td>
-                                </tr>
-                                <tr class="table-list">
-                                    <td class="name-inst">Декан</td>
-                                    <td class="td_with_btn"> <a href="#" class="table-list__btn edit-btns">Редагувати</a> </td>
-                                    <td class="td_with_btn"><a href="#" class="table-list__btn red delete-btns">Видалити</a></td>
-                                </tr>
-                                <tr class="table-list">
-                                    <td class="name-inst">Директор</td>
-                                    <td class="td_with_btn"> <a href="#" class="table-list__btn edit-btns">Редагувати</a> </td>
-                                    <td class="td_with_btn"><a href="#" class="table-list__btn red delete-btns">Видалити</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="row btn-option infousers no-gutters">
-                    <div class="col-xl-3 col-lg-12">
+                <div class="row btn-option infousers archive">
+                    <div class="col-xl-3 offset-xl-2 col-lg-12">
                         <button class="btn-form form-active">Повернутися назад</button>
+                    </div>
+                    <div class="col-xl-3 offset-xl-2 col-lg-12">
+                        <button class="btn-form form-active">Розархівувати</button>
                     </div>
                 </div>
             </div>
@@ -136,6 +167,6 @@
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@8.8.3/dist/sweetalert2.min.js"></script> 
     <script type="text/javascript" src="js/mainpage.js"></script>
-    <script type="text/javascript" src="js/manage.js"></script>
+    <script type="text/javascript" src="js/people.js"></script>
 </body>
 </html>
