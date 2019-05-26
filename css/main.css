@@ -15,6 +15,7 @@ body {
 }
 
 .row.wrapper .btn-toggle {
+  margin-top: 20px;
   display: flex;
 }
 
@@ -1210,6 +1211,7 @@ tr:nth-child(even) {
 .wrapper .setting-comment {
   border-bottom: 2px solid #4381ac;
   padding: 0 0 20px 0;
+  margin-top: 20px;
 }
 
 .wrapper .setting-comment button {
@@ -1855,8 +1857,13 @@ button:focus {
   color: #676767;
 }
 
+
 .btn-option.header-btn-option, .btn-option.header-btn-option .option-select, .btn-option.header-btn-option .option-select .reg-info{
   margin: 0;
+}
+
+.btn-option.header-btn-option {
+  margin-top: 20px;
 }
 
 .btn-option.header-btn-option .option-select .reg-info {
