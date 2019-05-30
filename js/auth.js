@@ -5,10 +5,6 @@ window.onload = function() {
     var passwordInput = document.getElementById("passlogin");
     var help = document.getElementById('help');
 
-    help.addEventListener('click', function(){
-    });
-
-
     pass.addEventListener('click', function() {
         pass.classList.toggle('del-slash');
         passSlash.classList.remove('del-slash');

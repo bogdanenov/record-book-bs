@@ -117,6 +117,10 @@ body {
   transition: 0.5s all ease;
 }
 
+.wrapper .row-info .col-info input.add-edit-menage {
+  padding-left: 20px;
+}
+
 .wrapper .row-info .col-info .reg-info::placeholder {
   font-family: "Proxima Nova";
   font-size: 16px;
@@ -288,19 +292,18 @@ option[disabled] {
 }
 textarea {
   resize: none;
+  padding: 0 15px;
 }
 
 #note-section {
   margin-bottom: 35px;
 }
-
-textarea::placeholder {
-  padding-left: 15px;
+#note_comment {
+  height: 150px;
 }
 
 #note.reg-info {
   border-radius: 3px;
-  padding-left: 0;
 }
 #note:focus {
   outline: none;
@@ -393,21 +396,33 @@ input[type="file"] {
 
 /* Auth */
 
-
-
 .row.auth {
-  background: url(../img/bg2.png);
+  background: url(../img/brickwall.png);
   background-color: #efefef;
   margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   min-height: 100vh;
   position: relative;
   z-index:1;
   overflow:hidden;
+}
+
+.auth img {
+  height: 70px;
+  filter: grayscale(1);
+  opacity: .3;
+  transition: .3s ease all;
+  margin-bottom: 20px;
+}
+
+.auth img:hover {
+  opacity: .8;
+  filter: grayscale(0);
+  cursor: pointer;
 }
 
 .row.auth .box {
@@ -752,8 +767,7 @@ input[type="file"] {
   display: flex;
   text-align: center;
   width: 160px;
-  margin-top: 20px;
-  margin-bottom: 35px;
+  margin-top: 74px;
   font-size: 16px;
   color: #efefef;
 }
@@ -762,7 +776,7 @@ input[type="file"] {
   display: block;
   color: #efefef;
   font-size: 16px;
-  margin-top: 84px;
+  margin-top: 44px;
 }
 
 .wrapper .row .card-eval .form h2 {
@@ -782,7 +796,7 @@ input[type="file"] {
   border: 2px solid #efefef;
   background: transparent;
   font-size: 16px;
-  margin-top: 45px;
+  margin-top: 50px;
   padding: 5px 40px;
   margin-bottom: 62px;
   border-radius: 3px;
