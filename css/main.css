@@ -1,6 +1,6 @@
 body {
   background-color: #efefef;
-  font-family: "Proxima Nova", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .row.wrapper {
@@ -396,6 +396,11 @@ input[type="file"] {
 
 /* Auth */
 
+
+.block-auth {
+  flex-direction: column;
+  margin: auto 0;
+}
 .row.auth {
   background: url(../img/brickwall.png);
   background-color: #efefef;
@@ -1577,7 +1582,7 @@ button:focus {
 .card-lists .card-list {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   border: 2px solid #4381ac;
   background-color: #e7e6e6;

@@ -5,41 +5,44 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Авторизація</title>
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
 	<div class="row auth no-gutters">
-		<div id="error" class="error">
-			<p>Вы ввели недостовірні данні</p>
-		</div>
-		<div class="box">
-			<h2>
-				Авторизація
-			</h2>
-			<form>
-				<div class="inputBox">
-					<input id="email" type="email" placeholder="почтова адреса" name="" required>
-				</div>
-				<div class="inputBox">
-					<input id="passlogin" type="password" placeholder="пароль" name="" required>
-					<i id="pass" class="fas fa-eye"></i>
-					<i id="pass-slash" class="fas fa-eye-slash del-slash"></i>
-				</div>
-				<input type="submit" value="войти" class="btn-login">
-				<a id="help" href="#popup"><span>Допомога</span></a>
-				<div class="popup" id="popup">
-					<div class="popup-inner">
-						<div class="popup__text">
-							<h1>Допомога</h1>
-							<p>  Якщо у Вас виникли проблеми з авторизацією, то зверніться на пошту <b> admin@admin.com </b>
-							</p>
-						</div>
-						<a class="popup__close" href="#">X</a>
+		<div class="row block-auth">
+			<div id="error" class="error">
+				<p>Вы ввели недостовірні данні</p>
+			</div>
+			<div class="box">
+				<h2>
+					Авторизація
+				</h2>
+				<form>
+					<div class="inputBox">
+						<input id="email" type="email" placeholder="почтова адреса" name="" required>
 					</div>
-				</div>
-			</form>
+					<div class="inputBox">
+						<input id="passlogin" type="password" placeholder="пароль" name="" required>
+						<i id="pass" class="fas fa-eye"></i>
+						<i id="pass-slash" class="fas fa-eye-slash del-slash"></i>
+					</div>
+					<input type="submit" value="войти" class="btn-login">
+					<a id="help" href="#popup"><span>Допомога</span></a>
+					<div class="popup" id="popup">
+						<div class="popup-inner">
+							<div class="popup__text">
+								<h1>Допомога</h1>
+								<p>  Якщо у Вас виникли проблеми з авторизацією, то зверніться на пошту <b> admin@admin.com </b>
+								</p>
+							</div>
+							<a class="popup__close" href="#">X</a>
+						</div>
+					</div>
+				</form>
+			</div>
 		</div>
 		<div class="row">
 			<a href="https://www.onaft.edu.ua/#s3" target="_blank"><img src="img/gerb.png" alt="logo"></a>
