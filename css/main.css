@@ -1,6 +1,6 @@
 body {
   background-color: #efefef;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif; 
 }
 
 .row.wrapper {
@@ -32,7 +32,7 @@ body {
 }
 
 .row.wrapper .btn-toggle .col .btn-box.student {
-  background: linear-gradient(to left, #4381ac 50%, #efefef 50%);
+  background: linear-gradient(to left, #4381ac 52%, #efefef 52%);
   background-size: 200% 100%;
   background-position: left bottom;
   border-top-left-radius: 5px;
@@ -41,7 +41,7 @@ body {
 }
 
 .row.wrapper .btn-toggle .col .btn-box.working {
-  background: linear-gradient(to right, #4381ac 50%, #efefef 50%);
+  background: linear-gradient(to right, #4381ac 52%, #efefef 52%);
   background-size: 201% 100%;
   background-position: right bottom;
   border-top-right-radius: 5px;
@@ -122,7 +122,6 @@ body {
 }
 
 .wrapper .row-info .col-info .reg-info::placeholder {
-  font-family: "Proxima Nova";
   font-size: 16px;
   opacity: 0.8;
   transition: 0.5s ease all;
@@ -692,7 +691,6 @@ input[type="file"] {
 }
 
 .wrapper .row .option-setting .reg-info::placeholder {
-  font-family: "Proxima Nova";
   font-size: 16px;
   opacity: 0.8;
   transition: 0.5s ease all;
@@ -846,7 +844,6 @@ input[type="file"] {
 }
 
 .wrapper .row .card .form .select-info .data::placeholder {
-  font-family: "Proxima Nova";
   font-size: 12px;
   opacity: 0.8;
   transition: 0.5s ease all;
@@ -1084,7 +1081,7 @@ input[type="file"] {
 
 /* Оценки */
 .wrapper .btn-toggle .col .btn-box.exam {
-  background: linear-gradient(to left, #4381ac 50%, #efefef 50%);
+  background: linear-gradient(to left, #4381ac 52%, #efefef 50%);
   background-size: 200% 100%;
   background-position: left bottom;
   border-top-left-radius: 5px;
@@ -1093,7 +1090,7 @@ input[type="file"] {
 }
 
 .wrapper .btn-toggle .col .btn-box.eval {
-  background: linear-gradient(to right, #4381ac 50%, #efefef 50%);
+  background: linear-gradient(to right, #4381ac 52%, #efefef 50%);
   background-size: 201% 100%;
   background-position: right bottom;
   border-top-right-radius: 5px;
@@ -1587,7 +1584,7 @@ button:focus {
   border: 2px solid #4381ac;
   background-color: #e7e6e6;
   color: #000;
-  height: 97%;
+  height: 96%;
   margin-top: 15px;
   border-radius: 3px;
 }
@@ -1737,7 +1734,6 @@ button:focus {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   transition: all .2s ease;
-  font-family: sans-serif;
   background: #888;
 }
 .tgl-skewed + .tgl-btn:after, .tgl-skewed + .tgl-btn:before {
@@ -2363,6 +2359,12 @@ button:hover {
   }
   .btn-option.archive {
     flex-direction: column-reverse;
+  }
+}
+
+@media (min-width: 1200px){
+  .col-xl-3.userlist-cards {
+      max-width: 100%;
   }
 }
 
